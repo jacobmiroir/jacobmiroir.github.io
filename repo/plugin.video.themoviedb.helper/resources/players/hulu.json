@@ -1,0 +1,48 @@
+{
+  "name": "Hulu",
+  "plugin": "slyguy.hulu",
+  "priority": 550,
+  "play_movie": [
+    "plugin://slyguy.hulu/?_=search",
+    {
+      "keyboard": "{title}"
+    },
+    {
+      "title": "{title}",
+      "year": "{year}"
+    }
+  ],
+  "play_episode": [
+    "plugin://slyguy.hulu/?_=search",
+    {
+      "keyboard": "{showname}"
+    },
+    {
+      "title": "{showname}"
+    },
+    {
+      "position": "{season}"
+    },
+    {
+      "position": "{episode}"
+    }
+  ],
+  "search_movie": [
+    "plugin://slyguy.hulu/?_=search",
+    {
+      "keyboard": "{title}"
+    }
+  ],
+  "search_episode": [
+    "plugin://slyguy.hulu/?_=search",
+    {
+      "keyboard": "{showname}"
+    },
+    {
+      "title": "{showname}"
+    },
+    {
+      "position": "{season}"
+    }
+  ]
+}

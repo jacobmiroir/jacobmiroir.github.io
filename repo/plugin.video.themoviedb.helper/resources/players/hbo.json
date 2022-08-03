@@ -1,0 +1,48 @@
+{
+  "name": "HBO Max",
+  "plugin": "slyguy.hbo.max",
+  "priority": 550,
+  "play_movie": [
+    "plugin://slyguy.hbo.max/?_=search",
+    {
+      "keyboard": "{title}"
+    },
+    {
+      "title": "{title}",
+      "year": "{year}"
+    }
+  ],
+  "play_episode": [
+    "plugin://slyguy.hbo.max/?_=search",
+    {
+      "keyboard": "{showname}"
+    },
+    {
+      "title": "{showname}"
+    },
+    {
+      "position": "{season}"
+    },
+    {
+      "position": "{episode}"
+    }
+  ],
+  "search_movie": [
+    "plugin://slyguy.hbo.max/?_=search",
+    {
+      "keyboard": "{title}"
+    }
+  ],
+  "search_episode": [
+    "plugin://slyguy.hbo.max/?_=search",
+    {
+      "keyboard": "{showname}"
+    },
+    {
+      "title": "{showname}"
+    },
+    {
+      "position": "{season}"
+    }
+  ]
+}

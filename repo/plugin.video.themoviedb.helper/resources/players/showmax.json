@@ -1,0 +1,48 @@
+{
+  "name": "Showmax",
+  "plugin": "plugin.video.showmax",
+  "priority": 450,
+  "play_movie": [
+    "plugin://plugin.video.showmax/?_=search",
+    {
+      "keyboard": "{title}"
+    },
+    {
+      "title": "{title}",
+      "year": "{year}"
+    }
+  ],
+  "play_episode": [
+    "plugin://plugin.video.showmax/?_=search",
+    {
+      "keyboard": "{showname}"
+    },
+    {
+      "title": "{showname}"
+    },
+    {
+      "position": "{season}"
+    },
+    {
+      "position": "{episode}"
+    }
+  ],
+  "search_movie": [
+    "plugin://plugin.video.showmax/?_=search",
+    {
+      "keyboard": "{title}"
+    }
+  ],
+  "search_episode": [
+    "plugin://plugin.video.showmax/?_=search",
+    {
+      "keyboard": "{showname}"
+    },
+    {
+      "title": "{showname}"
+    },
+    {
+      "position": "{season}"
+    }
+  ]
+}

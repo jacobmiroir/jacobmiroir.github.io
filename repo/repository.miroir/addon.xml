@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.miroir" name="SYNQ Repo" version="0.2.0" provider-name="jacobmiroir">
+<addon id="repository.miroir" name="SYNQ Repo" version="0.3.0" provider-name="jacobmiroir">
     <extension point="xbmc.addon.repository" name="SYNQ Repo">
         <dir>
             <info compressed="false">https://raw.githubusercontent.com/jacobmiroir/jacobmiroir.github.io/master/repo/zips/addons.xml</info>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon id="plugin.video.themoviedb.helper"
-version="9.0.0"
+version="9.1.0"
 name="Search"
 provider-name="jurialmunkey">
 <requires>

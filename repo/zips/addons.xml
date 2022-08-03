@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<addons><addon id="plugin.video.themoviedb.helper" version="9.0.0" name="Search" provider-name="jurialmunkey">
+<addons><addon id="plugin.video.themoviedb.helper" version="9.1.0" name="Search" provider-name="jurialmunkey">
 <requires>
   <import addon="xbmc.python" version="3.0.0" />
   <import addon="script.module.requests" version="2.9.1" />
@@ -60,7 +60,7 @@
   </assets>
   <news>Add some additional dbid checking based on title/year combo</news>
 </extension>
-</addon><addon id="repository.miroir" name="SYNQ Repo" version="0.2.0" provider-name="jacobmiroir">
+</addon><addon id="repository.miroir" name="SYNQ Repo" version="0.3.0" provider-name="jacobmiroir">
     <extension point="xbmc.addon.repository" name="SYNQ Repo">
         <dir>
             <info compressed="false">https://raw.githubusercontent.com/jacobmiroir/jacobmiroir.github.io/master/repo/zips/addons.xml</info>
