@@ -1,48 +1,25 @@
 {
-  "name": "Showmax",
-  "plugin": "plugin.video.showmax",
-  "priority": 450,
-  "play_movie": [
-    "plugin://plugin.video.showmax/?_=search",
-    {
-      "keyboard": "{title}"
-    },
-    {
-      "title": "{title}",
-      "year": "{year}"
-    }
-  ],
-  "play_episode": [
-    "plugin://plugin.video.showmax/?_=search",
-    {
-      "keyboard": "{showname}"
-    },
-    {
-      "title": "{showname}"
-    },
-    {
-      "position": "{season}"
-    },
-    {
-      "position": "{episode}"
-    }
-  ],
-  "search_movie": [
-    "plugin://plugin.video.showmax/?_=search",
-    {
-      "keyboard": "{title}"
-    }
-  ],
-  "search_episode": [
-    "plugin://plugin.video.showmax/?_=search",
-    {
-      "keyboard": "{showname}"
-    },
-    {
-      "title": "{showname}"
-    },
-    {
-      "position": "{season}"
-    }
-  ]
+  "name"              : "Showmax",
+  "plugin"            : "plugin.video.showmax",
+  "priority"          : 100,
+  "is_resolvable"     : "true",
+  "make_playlist"     : "true",
+  "assert"            : {
+                          "play_movie":       ["title", "year"],
+                          "play_episode":     ["showname", "season", "episode"],
+                          "search_movie":     ["title"],
+                          "search_episode":   ["showname"]
+                        },
+  "play_movie"        : [
+                          "plugin://plugin.video.showmax/?_=search&query={title_url}",
+                          {"strict": "true", "title": "(?i)^(\\[.*\\])?.*{title}.*(\\[.*\\])?$", "year": "{year}", "dialog": "true"}
+                        ],
+  "play_episode"      : [
+                          "plugin://plugin.video.showmax/?_=search&query={showname_url}",
+                          {"title": "(?i)^(\\[.*\\])?{showname}(\\[.*\\])?$"},
+                          {"title": "(?i)^Season {season}$"},
+                          {"strict": "true", "season": "^{season}$", "episode": "^{episode}$", "dialog": "true"}
+                        ],
+  "search_movie"      : "plugin://plugin.video.showmax/?_=search&query={title_url}",
+  "search_episode"    : "plugin://plugin.video.showmax/?_=search&query={showname_url}"
 }

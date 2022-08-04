@@ -1,7 +1,7 @@
 {
     "name"              : "Amazon Prime Video",
     "plugin"            : "plugin.video.amazon-test",
-    "priority"          : 550,
+    "priority"          : 100,
     "is_resolvable"     : "true",
     "assert"            : {
                             "play_movie":       ["title", "year"],
